@@ -1,0 +1,282 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: black; /* Set background to black */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Container Utility */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Flex Utility */
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Button Utility */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2b2823;
+    border-radius: 50px;
+    padding: 13px 24px;
+    gap: 13px;
+    box-shadow: 0px 2px 30px #5a5a5a80 inset;
+  }
+  
+  .btn-primary .right-icon {
+    height: 30px;
+    width: 30px;
+    background-color: #f8d10f;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+  
+  /* Spacing Utilities */
+  .mt-1 { margin-top: 10px; }
+  .mt-2 { margin-top: 20px; }
+  .mt-3 { margin-top: 30px; }
+  
+  .mb-1 { margin-bottom: 10px; }
+  .mb-2 { margin-bottom: 20px; }
+  .mb-3 { margin-bottom: 30px; }
+  
+  .pt-1 { padding-top: 10px; }
+  .pt-2 { padding-top: 20px; }
+  .pt-3 { padding-top: 30px; }
+  
+  .pb-1 { padding-bottom: 10px; }
+  .pb-2 { padding-bottom: 20px; }
+  .pb-3 { padding-bottom: 30px; }
+  
+  /* Text Utilities */
+  .text-center { text-align: center; }
+  .text-primary { color: #007bff; }
+  .text-secondary { color: #6c757d; }
+  
+  /* Header Section */
+  .header {
+    background-color: black;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .container.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+  }
+  
+  .logo img {
+    height: 100px; /* Adjust based on your logo size */
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px; /* Space between menu items */
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  .navbar .nav-links .active {
+    list-style-type: disc;
+  }
+  
+  .active::marker {
+    color: #f8d10f; /* Change the color of the bullet */
+  }
+  
+  .navbar .nav-links li a {
+    text-decoration: none;
+    color: white; /* Set text color to white */
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links li a:hover {
+    color: #f8d10f; /* Change color on hover */
+  }
+  
+  nav.navbar {
+    padding: 15px 50px;
+    border: 1px solid #2b2823;
+    box-shadow: 0px 2px 30px #5a5a5a80 inset;
+    border-radius: 50px;
+  }
+  
+  /* Mobile Menu Toggle */
+  .menu-toggle {
+    display: none; /* Hide by default */
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 15px;
+    background-color: #f8d10f;
+    border-radius: 5px;
+    /* z-index: 999; */
+  }
+  
+  .menu-close {
+    display: none; /* Hide by default */
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+  /* Responsive Design for Header */
+  @media (max-width: 1050px) {
+    .menu-toggle {
+      display: block; /* Show the toggle button on mobile */
+    }
+  
+    .header .btn-primary {
+      display: none; /* Hide the primary button on mobile */
+    }
+  
+    .container.header {
+      padding: 0 50px; /* Adjust padding for smaller screens */
+    }
+  
+    .navbar {
+      display: none; /* Hide the menu by default on mobile */
+      position: absolute;
+      top: 120px; /* Adjust based on header height */
+      left: 0;
+      width: 100%;
+      background-color: black; /* Match the header background */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      opacity: 0; /* Start with 0 opacity */
+      transform: translateY(-20px); /* Start slightly above */
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+  
+    .navbar.active {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      width: 50%;
+      height: 100%;
+      top: 0px;
+      border-radius: 0px;
+      right: 0px;
+      left: 50%;
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); 
+    }
+  
+    .navbar .nav-links {
+      flex-direction: column;
+      gap: 16px;
+      padding: 20px;
+      align-items: flex-start;
+    }
+
+    .menu-close {
+        display: block; /* Show on mobile */
+        display: flex;
+        top: 35px;
+        position: absolute;
+        width: 40px;
+        right: 35px;
+        align-items: center;
+        height: 40px;
+        color: black;
+        background-color: #f8d10f;
+        border-radius: 5px;
+        justify-content: center;
+        font-weight: bolder;
+      }
+  }
+  
+  /* Adjustments for medium screens */
+  @media screen and (min-width: 1050px) and (max-width: 1200px) {
+    .container.header {
+      padding: 0; /* Remove padding for medium screens */
+    }
+  }
+
+  .container.flex.hero {
+    justify-content: center;
+    padding: 90px;
+    flex-direction: column;
+    gap: 45px;
+}
+h1.hero-title.text-primary {
+    font-size: 70px;
+    font-weight: 500;
+    color: #ffffff; 
+ background-image: linear-gradient(135deg, #ffffff 16%, #585a58 64%); 
+ background-clip: text; 
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent; 
+ line-height: 1;
+ text-align: center;
+}
+p.hero-description.text-secondary {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff; 
+    background-image: linear-gradient(135deg, #ffffff 16%, #585a58 64%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+@media (max-width:991px) {
+    h1.hero-title.text-primary{
+        font-size: 55px;
+    }
+    
+}

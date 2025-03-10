@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Tailwind CSS CDN link -->
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+
+ <!-- Start Header Section -->
+    <header class="header">
+        <div class="container header">
+          <div class="logo">
+            <img src="assets/images/company-logo.png" alt="Company Logo">
+          </div>
+          
+          <nav class="navbar">
+            <div class="menu-close" onclick="toggleMenu()">&#10005;</div> <!-- Close Button -->
+            <ul class="flex nav-links">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+        </nav>
+        <div class="btn-primary ">
+            <a href="#" class="cta-button">Get In Touch</a>
+            <div class="right-icon">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    
+          <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> 
+        </div>
+      </header>
+ <!-- End Header Section -->
+
+ <!-- Start Banner Section -->
+      <section class="pt-3 pb-3 hero">
+        <div class="container flex hero ">
+          <div class="hero-content">
+            <h1 class="hero-title text-primary">Innovate, Transform, and <br> Lead with  Technology</h1>
+            <p class="hero-description text-secondary">
+              We provide the best solutions for your business needs. To enable Tailwind  CSS IntelliSense <br> suggestions in VS Code, install the "Tailwind CSS Let's grow together!
+            </p>
+            
+        </div>
+        <div class="btn-primary">
+            <a href="#" class="cta-button">Get In Touch</a>
+            <div class="right-icon">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+         
+        </div>
+      </section>
+
+
+
+      <script>
+        function toggleMenu() {
+          const navbar = document.querySelector('.navbar');
+          navbar.classList.toggle('active');
+        }
+      </script>
+</body>
+
+</html>
