@@ -1,0 +1,285 @@
+@media (max-width:1200px) {
+    .case-studies-content {
+        width: 100%;
+      flex-direction: column;
+    }
+    .case-studies-container{
+        flex-direction: column;
+      }
+  }
+
+/* Responsive Design */
+@media (min-width: 991px) {
+    .where-creativity {
+      padding: 80px 40px; /* Adjusted padding for tablets */
+    }
+  
+    .techno-content {
+      flex-direction: row; /* Side-by-side layout for tablets and larger screens */
+      padding: 0 40px; /* Adjusted padding for tablets */
+      margin-bottom: 80px; /* Adjusted margin for tablets */
+    }
+  
+    .techno-content .overlay-content {
+      width: 50%; /* Half width for tablets and larger screens */
+      height: 600px; /* Fixed height for tablets and larger screens */
+      padding: 50px; /* Adjusted padding for tablets */
+      margin-bottom: 0; /* Remove margin between items */
+    }
+  
+    .tool-icons {
+      gap: 35px; /* Restore gap for tablets and larger screens */
+      padding: 0 50px; /* Restore padding for tablets and larger screens */
+    }
+  
+    .tool-icons img {
+      width: 100px; /* Restore icon size for tablets and larger screens */
+    }
+  
+    .overlay-content h1 {
+      font-size: 33px; /* Restore font size for tablets and larger screens */
+    }
+  
+    .overlay-text h2 {
+      font-size: 30px; /* Restore font size for tablets and larger screens */
+      margin-bottom: 20px; /* Restore margin for tablets and larger screens */
+    }
+  
+    .overlay-text p {
+      font-size: 20px; /* Restore font size for tablets and larger screens */
+    }
+  
+    .overlay-text {
+      padding-left: 25px; /* Restore padding for tablets and larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .where-creativity {
+      padding: 80px 80px; /* Restore padding for desktops */
+    }
+  
+    .techno-content {
+      padding: 0 ; /* Restore padding for desktops */
+      margin-bottom: 100px; /* Restore margin for desktops */
+    }
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+  
+    .section-title {
+      font-size: 35px;
+      text-align: left !important;
+    }
+  
+    .service-title {
+      font-size: 22px;
+    }
+  
+    .service-description {
+      font-size: 14px;
+    }
+    .creative-head {
+        margin-bottom: 60px;
+        text-align: left;
+    }
+    .service-content {
+        text-align: left;
+        margin-bottom: 80px;
+    }
+  }
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
+      gap: 20px;
+    }
+  
+    .section-title {
+      font-size: 28px;
+    }
+  
+    .service-title {
+      font-size: 22px;
+    }
+  
+    .service-description {
+      font-size: 14px;
+    }
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .counters-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+  
+    .counter-number {
+      font-size: 36px;
+    }
+  
+    .counter-label {
+      font-size: 16px;
+    }
+    .counter-item {
+      width: 100%;
+   
+    }
+    .counter-section {
+     
+      padding: 80px 10px;
+     
+    }
+  }
+
+  @media (max-width: 600px) {
+    .creative-head h2 {
+      text-align: left;
+      font-size: 35px !important;
+    }
+    .creative-head p{
+      text-align: left;
+    }
+    .creative-para .creative-content{
+      font-size: 25px;
+    }
+    h2.section-title.techno {
+      text-align: left;
+    }
+    .how-we-help-section {
+      padding: 80px 0px !important;
+  }
+  .tool-icons{
+    justify-content: flex-start !important;
+  }
+  .techno-content{
+    padding: 0 !important;
+  }
+  .where-creativity {
+    padding:0px !important;
+  }
+  .container.case-staudies{
+    padding: 50px 25px !important;
+  }
+  section.section-contact {
+      margin: 15px;
+  }
+}
+
+  @media (max-width: 768px) {
+    .logos-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+    }
+  
+    .section-title {
+      font-size: 28px;
+    }
+   
+  }
+
+  @media (max-width:500px) {
+    h1.hero-title.text-primary{
+      font-size: 38px;
+      
+    }
+      .container.flex.hero {
+        justify-content: flex-start;
+        padding: 90px 20px;
+      
+    }
+    p.hero-description.text-secondary{
+      text-align: left;
+    }
+    .creative-para .creative-content{
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width:771px) {
+    .container.header {
+      padding: 0 20px;
+  }
+      h1.hero-title.text-primary{
+        font-size: 39px;
+        text-align: left;
+      }
+      .container.flex.hero {
+        justify-content: flex-start;
+        padding: 90px 50px;
+        align-items: flex-start;
+      
+    }
+    p.hero-description.text-secondary{
+      text-align: left;
+    }
+  }
+  @media (max-width:1022px) {
+      h1.hero-title.text-primary{
+        font-size: 50px;
+        
+      }    
+  }
+
+  @media (max-width:991px) {
+    footer{
+        flex-direction: column;
+        margin: 120px 0 0 0px;
+        padding: 20px;
+        padding-top: 60px;
+        border-radius: 0;
+        padding-bottom: 80px;
+    }
+    .col-rt {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 50px;
+        gap: 30px;
+      }
+
+      .col-lf h2{
+        font-size: 30px;
+        margin-top: 40px;
+      }
+      .copy-right{
+        width: 100%;
+        left: 0px;
+        border-radius: 0;
+      }
+  }
+  @media (min-width:1280px) {
+    .container.header{
+        padding: 0 70px;
+    }
+  }
+  @media (max-width:1400px) {
+    h1.company-name {
+        left: 25%;
+        font-size: 72px;
+    }
+  }
+  @media (max-width:1200px) {
+    h1.company-name {
+        left: 20%;
+        font-size: 72px;
+    }
+  }
+  @media (max-width:1100px) {
+    h1.company-name {
+        left: 20%;
+        font-size: 65px;
+        bottom: 17px;
+    }
+  }
+  @media (max-width:991px) {
+    h1.company-name {
+        display: none;
+    }
+  }
