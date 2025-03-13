@@ -23,7 +23,7 @@
     .techno-content .overlay-content {
       width: 50%; /* Half width for tablets and larger screens */
       height: 600px; /* Fixed height for tablets and larger screens */
-      padding: 50px; /* Adjusted padding for tablets */
+       /* Adjusted padding for tablets */
       margin-bottom: 0; /* Remove margin between items */
     }
   
@@ -33,7 +33,7 @@
     }
   
     .tool-icons img {
-      width: 100px; /* Restore icon size for tablets and larger screens */
+      width: 50px; /* Restore icon size for tablets and larger screens */
     }
   
     .overlay-content h1 {
@@ -50,7 +50,8 @@
     }
   
     .overlay-text {
-      padding-left: 25px; /* Restore padding for tablets and larger screens */
+      
+      text-align: left;
     }
   }
   
@@ -258,6 +259,7 @@
     .container.header{
         padding: 0 70px;
     }
+   
   }
   @media (max-width:1400px) {
     h1.company-name {
@@ -269,6 +271,11 @@
     h1.company-name {
         left: 20%;
         font-size: 72px;
+    }
+    .next-swiper {
+      padding-right: 0;
+      justify-content: center;
+      
     }
   }
   @media (max-width:1100px) {
@@ -282,4 +289,54 @@
     h1.company-name {
         display: none;
     }
+    .case-staudies.contact.container {
+      padding-top: 80px;
   }
+  .next-swiper {
+    padding-right: 0;
+    justify-content: center;
+    
+  }
+  .service-grid {
+    display: flex;
+    flex-direction: column;
+  } 
+  .grid-content.one1 {
+    padding-top: 10%;
+}
+.grid-content.three3 {
+  padding-top: 10%;
+}
+.grid-content{
+  padding-top: 10%;
+}
+.creative-grid-container{
+  display: flex;
+  flex-direction: column;
+}
+.creative-grid-content.three{
+  display: none;
+}
+.creative-grid-content.one .grid-three-content{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 75px;
+  font-size: 48px;
+}
+.creative-grid-content.one{
+  display: flex;
+  padding-top: 30px;
+  padding-right: 30px;
+  align-items: flex-end;
+}
+
+.creative-grid-content.one h1{
+  padding-top: 15%;
+}
+.creative-grid-content.two{
+  align-items: center;
+  gap: 26px;
+  padding-left: 0;
+}
+}
