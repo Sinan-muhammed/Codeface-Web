@@ -130,6 +130,9 @@
     color: #f8d10f; /* Change the color of the bullet */
   }
   
+  .box-container {
+    width: 80%;
+}
   .navbar .nav-links li a {
     text-decoration: none;
     color: white; /* Set text color to white */

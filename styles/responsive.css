@@ -301,6 +301,9 @@
 
 
   @media (max-width:991px) {
+    .pt-3.pb-3.hero .bg-eye {
+      display: none;
+    }
     .counter-item {
       width: 100%;
       align-items: center;
@@ -366,4 +369,14 @@
   gap: 26px;
   padding-left: 0;
 }
+}
+@media (max-width: 760px) {
+  .creative-grid-content.one {
+      gap: 70px;
+      flex-direction: column;
+      display: flex;
+      padding-top: 30px;
+      padding-right: 30px;
+      align-items: flex-start;
+  }
 }
