@@ -10,6 +10,7 @@
 
 /* Responsive Design */
 @media (min-width: 991px) {
+  
     .where-creativity {
       padding: 80px 40px; /* Adjusted padding for tablets */
     }
@@ -91,8 +92,12 @@
     }
     .service-content {
         text-align: left;
+        padding: 25px;
         margin-bottom: 80px;
     }
+    .featured-works {
+      padding: 25px;
+  }
   }
 
   /* Responsive Design */
@@ -116,29 +121,37 @@
   }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .counters-grid {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-    }
+@media (max-width: 991px) {
+    
   
     .counter-number {
-      font-size: 36px;
+      font-size: 60px;
     }
   
     .counter-label {
-      font-size: 16px;
+      font-size: 25px;
     }
-    .counter-item {
-      width: 100%;
    
-    }
     .counter-section {
-     
+     margin-top: 0;
       padding: 80px 10px;
      
     }
+    .editors-logos {
+      margin-left: 5%;
+      width: 90%;
+    }
+    .logo-item {
+      flex: 0 0 auto;
+      margin-right: 0px;
   }
+  }
+
+  @media (max-width: 420px) {
+    .counter-label {
+        font-size: 21px;
+    }
+}
 
   @media (max-width: 600px) {
     .creative-head h2 {
@@ -164,7 +177,7 @@
     padding: 0 !important;
   }
   .where-creativity {
-    padding:0px !important;
+    padding:25px ;
   }
   .container.case-staudies{
     padding: 50px 25px !important;
@@ -285,7 +298,21 @@
         bottom: 17px;
     }
   }
+
+
   @media (max-width:991px) {
+    .counter-item {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 20px;
+   
+    }
+    .counters-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
     h1.company-name {
         display: none;
     }

@@ -333,12 +333,9 @@ p.hero-description.text-secondary {
 }
 
 .counters-grid {
-  display: flex;
+  display: grid;
   gap: 30px;
-  text-align: center;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+ grid-template-columns: auto auto auto auto;
 }
 
 .counter-item {
@@ -347,22 +344,38 @@ p.hero-description.text-secondary {
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 200px;
-  width: 250px;
+  /* width: 250px; */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 0;
+  background-image: url(../assets/images/counter-background.jpeg);
+  background-size: cover;
+  box-shadow: 0px 0px 96px 0px rgba(255, 255, 255, 0.05) inset;
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.075) inset;
+  /* background: #ffffff00; */
+
+
 }
 
 .counter-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+.counter-item.two {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  justify-content: center;
+    gap: 54px;
+    /* align-items: center; */
+    padding-top: 74px;
+}
 
 .counter-number {
   font-size: 60px;
   font-weight: 600;
-  /* margin-bottom: 10px; */
+  margin-bottom: -20px;
   color: #484847; 
  background-image: linear-gradient(180deg, #484847 36%, #9c9c9c 79%); 
  background-clip: text; 
@@ -371,14 +384,45 @@ p.hero-description.text-secondary {
 }
 
 .counter-label {
-  font-size: 18px;
-  color: #484847; 
- background-image: linear-gradient(180deg, #484847 36%, #9c9c9c 79%); 
- background-clip: text; 
+  font-size: 24px;
+  color: #fffffb; 
+  background-image: linear-gradient(180deg, #858484 36%, #818181 79%);
+   background-clip: text; 
  -webkit-background-clip: text; 
  -webkit-text-fill-color: transparent; 
 }
-
+.elipse-client {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img.five-img {
+  position: absolute;
+  z-index: 5;
+  left: 56%;
+}
+img.four-img {
+  position: absolute;
+  z-index: 4;
+  left: 49%;
+}
+img.trd-img {
+  position: absolute;
+  z-index: 3;
+  left: 41%;
+}
+img.scnd-img {
+  z-index: 2;
+  position: absolute;
+  left: 34%;
+}
+img.first-img {
+  position: absolute;
+  z-index: 1;
+  left: 27%;
+}
 
 .counter {
   display: flex;
@@ -390,6 +434,7 @@ p.hero-description.text-secondary {
   font-size: 40px;
   font-weight: 500;
   /* margin-bottom: 10px; */
+  margin-bottom: -20px;
   color: #484847; 
  background-image: linear-gradient(180deg, #484847 36%, #9c9c9c 79%); 
  background-clip: text; 
@@ -647,20 +692,25 @@ hr.service-line {
   flex-direction: column;
 }
 .case-studies-container{
+  width: 100%;
   display: flex;
   gap: 15px;
 }
 .case-studies-content {
+  height: 700px;
   width: 50%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 50px;
   border: 1px solid rgb(45, 43, 43);
   box-shadow: 0px 2px 30px #5a5a5a80 inset;
     border-radius: 25px;
     /* padding: 40px; */
-  /* justify-content: space-between; */
+  justify-content: flex-end;
   margin-bottom: 75px;
+  padding-left: 40px;
+  padding-bottom: 20px;
 }
 .studie-content h2{
   font-size: 32px;
@@ -690,12 +740,16 @@ hr.service-line {
 
 section.section-contact {
   margin: 50px;
-  border: 1px solid rgb(45, 43, 43);
-  box-shadow: 0px 2px 30px #5a5a5a80 inset;
+  /* border: 1px solid rgb(45, 43, 43); */
+  /* box-shadow: 0px 2px 30px #5a5a5a80 inset; */
+  box-shadow: inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, .075), inset 0 0 5vw hsla(0, 0%, 100%, .05);
+  background-color: hsla(0, 0%, 100%, .025);
+  background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 40%, hsla(0, 0%, 100%, .05) 75%, hsla(0, 0%, 100%, .1) 100%);
+  transition: background-color .5s ease;
   border-radius: 25px;
 }
 footer{
-  background-color: #9C9C9C;
+  background-color: #ffffff;
   margin: 50px;
   border-radius: 25px;
   display: flex;
@@ -714,9 +768,9 @@ footer{
 .col-lf h2{
   font-size: 37px;
     font-weight: 600;
-    color: #ffffff;
-    background-image: linear-gradient(135deg, #ffffff 34%, #585a58 140%);
+    color: #fffbfb;
     background-clip: text;
+    background-image: linear-gradient(135deg, #565656 34%, #f8fff8 140%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -807,8 +861,8 @@ h1.company-name {
 }
 .service-grid .grid-item{
   /* background-color: ; */
-  border: 1px solid black;
-  box-shadow: 0px 2px 30px #5a5a5a80 inset;
+  /* border: 1px solid black; */
+  /* box-shadow: 0px 2px 30px #5a5a5a80 inset; */
   border-radius: 23px;
   padding: 10px;
   display: flex;
@@ -817,6 +871,10 @@ h1.company-name {
   padding-left: 45px;
   padding-bottom: 45px;
   /* text-align: center; */
+  box-shadow: inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, .075), inset 0 0 5vw hsla(0, 0%, 100%, .05);
+  background-color: hsla(0, 0%, 100%, .025);
+  background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 40%, hsla(0, 0%, 100%, .05) 75%, hsla(0, 0%, 100%, .1) 100%);
+  transition: background-color .5s ease;
 }
 .grid-item.one {
   grid-row-start: 1;
@@ -902,8 +960,12 @@ h1.company-name {
       padding-bottom: 0;
 }
 .featured-works .container{
-  border: 1px solid black;
-  box-shadow: 0px 2px 30px #5a5a5a80 inset;
+  /* border: 1px solid black; */
+  /* box-shadow: 0px 2px 30px #5a5a5a80 inset; */
+  box-shadow: inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, .075), inset 0 0 5vw hsla(0, 0%, 100%, .05);
+  background-color: hsla(0, 0%, 100%, .025);
+  background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 40%, hsla(0, 0%, 100%, .05) 75%, hsla(0, 0%, 100%, .1) 100%);
+  transition: background-color .5s ease;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -980,7 +1042,11 @@ h1.company-name {
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  box-shadow: 0px 2px 30px #5a5a5a80 inset;
+  /* box-shadow: 0px 2px 30px #5a5a5a80 inset; */
+  box-shadow: inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, .075), inset 0 0 5vw hsla(0, 0%, 100%, .05);
+  background-color: hsla(0, 0%, 100%, .025);
+  background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 40%, hsla(0, 0%, 100%, .05) 75%, hsla(0, 0%, 100%, .1) 100%);
+  transition: background-color .5s ease;
   border-radius: 100px;
   font-weight: 900;
 }
@@ -995,4 +1061,118 @@ section.where-creativity {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+
+.editors-logos {
+  margin-left: 10%;
+  width: 80%;
+  overflow: hidden; /* Hide overflow to create a scrolling effect */
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.logos-grid {
+  display: flex;
+  animation: scroll-horizontally 20s linear infinite; /* Animation for horizontal scrolling */
+  padding-left: 100%; /* Add left padding to ensure logos scroll into view */
+}
+
+.logo-item {
+  flex: 0 0 auto; /* Prevent flex items from shrinking */
+  margin-right: 40px; /* Space between logos */
+}
+
+@keyframes scroll-horizontally {
+  0% {
+    transform: translateX(0); /* Start from the original position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move logos to the left by 100% */
+  }
+}
+
+.logos-grid {
+  display: flex;
+  animation: scroll-horizontally 20s linear infinite;
+  padding-left: 100%; /* Add left padding */
+  padding-right: 100%; /* Add right padding */
+}
+
+.logos-grid:hover {
+  animation-play-state: running; /* Pause the animation on hover */
+}
+.text {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	color: white;
+	font-size: 17px;
+	animation: textRotation 10s linear infinite;
+}
+
+@keyframes textRotation {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.text span{
+	position: absolute;
+	left: 50%;
+	font-size: 1.2em;
+	transform-origin: 0 100px;
+}
+.circle {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	/* border-radius: 100vmax; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+
+  font-size: 45px;
+
+}
+.case-studies-content.one{
+ background-image: url(../assets/images/Free-Elegant-Interior-Laptop-Website-Mockup.png);
+ background-size: cover;
+}
+.case-studies-content.two{
+  background-image: url(../assets/images/80a2bb126031567.612542339630e.png);
+  background-size: cover;
+ }
+.case-studies-content .section-title{
+  font-size: 25px;
+ }
+.case-studies-content p{
+  font-size: 20px;
+  text-align: left;
+  background-image: linear-gradient(135deg, #6e6d6d 16%, #4d4d4db1 64%)
+ }
+.case-studies-content .service-content{
+ margin-bottom: 20px;
+ }
+.pt-3.pb-3.hero{
+  position: relative;
+}
+.pt-3.pb-3.hero .bg-eye{
+  position: absolute;
+  top: 26%;
+  left: 30%;
+}
+.pt-3.pb-3.hero .hexagone{
+  position: absolute;
+  right: 0;
+  top: 10%;
 }
