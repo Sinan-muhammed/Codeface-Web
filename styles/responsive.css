@@ -69,6 +69,17 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .creative-grid-content.two {
+    align-items: flex-start !important;
+    gap: 26px;
+    padding-left: 40px !important;
+}
+.overlay-text {
+  width: 80%;
+  text-align: left;
+}
+
+
     .services-grid {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
@@ -379,4 +390,224 @@
       padding-right: 30px;
       align-items: flex-start;
   }
+}
+@media (max-width: 1400px) {
+  .grid-item.three img{
+    position:absolute;
+    left: 10%;
+    top: 9%;
+  }
+  .grid-content.three3 {
+    padding-top: 40%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .how-we-help-section .container {
+    padding: 0 4% ;
+}
+.service-grid{  
+  padding-left: 0px ;
+}
+}
+@media (max-width: 1200px) {
+  .grid-content.three3 {
+    width: 89% !important;
+  }
+  .service-grid .grid-item{
+
+    padding-left: 35px;
+    padding-bottom: 35px;
+  }
+  .grid-item.four img {
+  
+    top: 15%;
+   
+}
+}
+@media (max-width:991px) {
+  .grid-item.one img{
+    position:absolute;
+    right: 10%;
+    top: 20%;
+  }
+  .grid-item.two img{
+    position:absolute;
+    right: 10%;
+    top: 20%;
+  }
+  .grid-item.three img{
+    position:absolute;
+    left: 70% ;
+    top: 20%;
+  }
+  .grid-item.four img{
+    position:absolute;
+    left: 69% ;
+    top: 20%;
+  }
+  .grid-item.five img{
+    position:absolute;
+    left: 70% ;
+    top: 20%;
+  }
+  .grid-item.six img{
+    position:absolute;
+    right: 10%;
+    top: 20%;
+  }
+  .grid-content.three3 {
+    padding-top: 9%;
+}
+.grid-content {
+  width: 55% !important;
+}
+.grid-content.three3 {
+  width: 55% !important;
+}
+.grid-content.four4 {
+  width: 55% !important;
+}
+}
+@media (max-width:600px) {
+  .grid-item.three img{
+    position:absolute;
+    left: 55% ;
+    top: 20%;
+  }
+  .grid-item.four img{
+    position:absolute;
+    left: 55% ;
+    top: 20%;
+  }
+  .grid-item.five img{
+    position:absolute;
+    left: 55% ;
+    top: 20%;
+  }
+}
+@media (max-width:500px) {
+  .grid-item.one img{
+    position:absolute;
+    right: 10%;
+    top: 20%;
+  }
+  .grid-item.two img{
+    position:absolute;
+    right: 10%;
+    top: 20%;
+  }
+  .grid-item.three img{
+    position:absolute;
+    left: 55% ;
+    top: 20%;
+  }
+  .grid-item.four img{
+    position:absolute;
+    left: 55% ;
+    top: 20%;
+  }
+  .grid-item.five img{
+    position:absolute;
+    left: 55% ;
+    top: 20%;
+  }
+  .grid-item.six img{
+    position:absolute;
+    right: 10%;
+    top: 20%;
+  }
+  .grid-content {
+    padding-top: 60%;
+    width: 90% !important;
+  }
+  .grid-content.one1 {
+    padding-top: 60%;
+}
+.grid-content.two2 {
+  padding-top: 60%;
+  width: 90% !important;
+}
+.grid-content.three3 {
+  padding-top: 60%;
+  width: 90% !important;
+}
+.grid-content.four4 {
+  width: 90% !important;
+}
+.grid-content.six6 {
+  padding-top: 60%;
+  width: 90% !important;
+}
+.grid-item img{
+  width: 150px;
+}
+.service-grid .grid-item {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+}
+
+
+@media (max-width:450px) {
+  .grid-item.three img {
+    position: absolute;
+    left: 31%;
+    top: 9%;
+}
+.grid-item.one img {
+  position: absolute;
+  right: 26%;
+    top: 11%;;
+}
+  .grid-item.two img{
+    position:absolute;
+    right: 26%;
+    top: 11%;
+  }
+
+  .grid-item.four img{
+    position:absolute;
+    left: 31%;
+    top: 9%;
+  }
+  .grid-item.five img{
+    position:absolute;
+    left: 31%;
+    top: 9%;
+  }
+  .grid-item.six img{
+    position:absolute;
+    right: 10%;
+    top: 20%;
+  }
+  .grid-content {
+    padding-top: 60%;
+    width: 90% !important;
+  }
+  .grid-content.one1 {
+    padding-top: 60%;
+}
+.grid-content.two2 {
+  padding-top: 60%;
+  width: 90% !important;
+}
+.grid-content.three3 {
+  padding-top: 60%;
+  width: 90% !important;
+}
+.grid-content.four4 {
+  width: 90% !important;
+}
+.grid-content.six6 {
+  padding-top: 60%;
+  width: 90% !important;
+}
+.grid-item img{
+  width: 150px;
+}
+.service-grid .grid-item {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
 }

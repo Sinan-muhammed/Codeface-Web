@@ -15,6 +15,7 @@
 <body >
 
  <!-- Start Header Section -->
+  <section class="main">
     <header class="header">
         <div class="container header">
           <div class="logo">
@@ -44,10 +45,11 @@
  <!-- End Header Section -->
 
  <!-- Start Banner Section -->
-      <section class="pt-3 pb-3 hero">
+      <section class="pt-3 pb-3 hero video-background " id="overlay">
         <div class="container flex hero ">
           <div class="hero-content">
-            <h1 class="hero-title text-primary">Innovate, Transform, and <br> Lead with  Technology</h1>
+            <h1 class="hero-title text-primary">Innovate, Transform, and <br> Lead with  <span>Technology</span></h1>
+            <img src="./assets/images/backgrtounds/under-line.png" alt="">
             <p class="hero-description text-secondary">
               We provide the best solutions for your business needs. To enable Tailwind  CSS IntelliSense <br> suggestions in VS Code, install the "Tailwind CSS Let's grow together!
             </p>
@@ -61,65 +63,27 @@
         </div>
          
         </div>
-        <img src="./assets/images/SVG (1).png" alt="" class="bg-eye">
-        <img src="./assets/images/Hexagons.png" alt="" class="hexagone">
+        <video autoplay muted loop id="bg-video">
+          <source src="./assets/video/AdobeStock_1274573685_4K.mp4" type="video/mp4">
+          <source src="./assets/video/AdobeStock_1274573685_4K.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
       </section>
       <!-- Start Editors' Logos Section -->
       <section class="editors-logos">
         <div class="container">
-          <div class="logos-grid">
-            <!-- Original Logos -->
-            <div class="logo-item">
-              <img src="./assets/images/webflow.webp" alt="web flow Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/microsofft-removebg-preview.png" alt="micro soft Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/openai-removebg-preview.png" alt="openai Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/amazone.png" alt="amazone Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/youtube-removebg-preview.png" alt="youtube Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/google-removebg-preview.png" alt="google Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/nvidia-removebg-preview.png" alt="nvidia Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/amd-removebg-preview.png" alt="amd Logo" width="200px">
-            </div>
-      
-            <!-- Duplicated Logos (for seamless scrolling) -->
-            <div class="logo-item">
-              <img src="./assets/images/webflow.webp" alt="web flow Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/microsofft-removebg-preview.png" alt="micro soft Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/openai-removebg-preview.png" alt="openai Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/amazone.png" alt="amazone Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/youtube-removebg-preview.png" alt="youtube Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/google-removebg-preview.png" alt="google Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/nvidia-removebg-preview.png" alt="nvidia Logo" width="200px">
-            </div>
-            <div class="logo-item">
-              <img src="./assets/images/amd-removebg-preview.png" alt="amd Logo" width="200px">
-            </div>
+          <!-- Marquee for 8 items -->
+          <div class="marquee marquee--8">
+            <img class="marquee__item" src="./assets/images/amazone.png" width="100" height="100" alt="">
+            <img class="marquee__item" src="./assets/images/amd-removebg-preview.png" width="100" height="100" alt="">
+            <img class="marquee__item" src="./assets/images/nvidia-removebg-preview.png" width="100" height="100" alt="">
+            <img class="marquee__item" src="./assets/images/youtube-removebg-preview.png" width="100" height="100" alt="">
+            <img class="marquee__item" src="./assets/images/webflow.webp" width="100" height="100" alt="">
+            <img class="marquee__item" src="./assets/images/microsofft-removebg-preview.png" width="100" height="100" alt="">
+            <img class="marquee__item" src="./assets/images/openai-removebg-preview.png" width="100" height="100" alt="">
+            <img class="marquee__item" src="./assets/images/google-removebg-preview.png" width="100" height="100" alt="">
           </div>
+          
         </div>
       </section>
 <!-- End Editors' Logos Section -->
@@ -156,7 +120,7 @@
   </div>
 </section>
 <!-- End Counter Section -->
- 
+</section>
 <!-- Start How We Help Section -->
 <section class="how-we-help-section">
   <div class="container">
@@ -170,6 +134,7 @@
     <!-- Start Services Section -->
     <div class="service-grid">
       <div class="grid-item one">
+        
         <div class="grid-content one1">
           <h2>Web Develepment</h2>
           <p>We know how to make you feel and trust contended with our web development services.</p>
@@ -177,8 +142,10 @@
         <div class="right-icon">
           <i class="fa-solid fa-arrow-right"></i>
         </div>
+        <img src="./assets/services/web-development.png" alt="">
       </div>
       <div class="grid-item two">
+        
         <div class="grid-content two2">
           <h2>App Develepment</h2>
           <p>With top notch approach we design and develop apps that create great visual experience and performance.</p>
@@ -186,8 +153,10 @@
         <div class="right-icon">
           <i class="fa-solid fa-arrow-right"></i>
         </div>
+        <img src="./assets/services/app-dev1.png" alt="">
       </div>
       <div class="grid-item three">
+        
         <div class="grid-content three3">
           <h2>Brand Develepment</h2>
           <p>We are an artistic digital agency proficient in strategic and creative brand development.</p>    
@@ -195,8 +164,10 @@
         <div class="right-icon">
           <i class="fa-solid fa-arrow-right"></i>
         </div>
+        <img src="./assets/services/brand-dev.png" alt="">
       </div>
       <div class="grid-item four">
+        
         <div class="grid-content four4">
           <h2>Digital Marketing</h2>
           <p>Successful campaigns start with a solid creative concept. Our strategies target each stage of the clients digital voyage.</p>
@@ -204,8 +175,10 @@
         <div class="grid right-icon">
           <i class="fa-solid fa-arrow-right"></i>
         </div>
+        <img src="./assets/services/digital-marketing.png" alt="">
       </div>
       <div class="grid-item five">
+        
         <div class="grid-content five5">
           <h2>Artificial Intelligence</h2>
           <p>We accelarate enterprises to automate their business process with custom developed AI powered applications</p>
@@ -213,8 +186,10 @@
         <div class="grid right-icon">
           <i class="fa-solid fa-arrow-right"></i>
         </div>
+        <img src="./assets/services/ai.png" alt="">
       </div>
       <div class="grid-item six">
+       
         <div class="grid-content six6">
           <h2>DevOps Testing</h2>
           <p>With Devops practices we reinforce organisations to be more productive by combining development, operations and quality assuarance team together.</p>
@@ -222,6 +197,7 @@
         <div class="right-icon">
           <i class="fa-solid fa-arrow-right"></i>
         </div>
+        <img src="./assets/services/dev-ops.png" alt="">
       </div>
       <div class="grid-item seven">
         <img src="./assets/images/Visual.png" alt="">
@@ -242,8 +218,24 @@
       <h2 class="section-title">Turning Vision into Reality – Our Success Stories</h2>
       <p>Explore our portfolio of innovative solutions, crafted to drive success and impact</p>
     </div>
-    <div class="box-container">
-      <img src="./assets/images/iMac_on_Table_Mockup_2.png" alt="">
+    <div class=" feature-box-works">
+      
+      <div class="card">
+        <img src="./assets/images/featured-box/fashion.png">
+        <div class="card__head">Fashion</div>
+      </div>
+      <div class="card">
+        <img src="./assets/images/featured-box/art-featurd-box.jpeg">
+        <div class="card__head">Art</div>
+      </div>
+      <div class="card">
+        <img src="./assets/images/featured-box/money-transfer-featured-box.jpeg">
+        <div class="card__head">Money Transfer</div>
+      </div>
+      <div class="card">
+        <img src="./assets/images/featured-box/cab-booking-featured-box.jpeg">
+        <div class="card__head">Cab Booking</div>
+      </div>
     </div>
     <div class="next-swiper">
       <i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i>
@@ -268,30 +260,26 @@
     
     <div class="creative-grid-container">
       <div class="creative-grid-content one">
+        <img src="./assets/images/backgrtounds/Group.png" alt="">
         <h1>Let’s build something remarkable, together</h1>
-        
-          <!-- <div class="grid-three-content">
-            
-            <div class="circle">
-              <div class="logo">
-                <span>24 +</span>
-              </div>
-              <div class="text">
-                <h2>
-                 Expertise Team - Expertise Team
-                </h2>
-              </div>
-            </div>
-          </div>      -->
-        
       </div>
       <div class="creative-grid-content two">
         <h1>We use the best technologies</h1>
-        <div class="tool-icons">
-          <img src="./assets/images/php.png" alt="">
-          <img src="./assets/images/wordpress.png" alt="">
-          <img src="./assets/images/java.png" alt="">
-          <img src="./assets/images/Vector (3).png" alt="" >
+        <div class="marquee">
+          <ul class="marquee-content">
+            <li><i class="fab fa-github"></i></li>
+            <li><i class="fab fa-codepen"></i></li>
+            <li><i class="fab fa-free-code-camp"></i></li>
+            <li><i class="fab fa-dev"></i></li>
+            <li><i class="fab fa-react"></i></li>
+            <li><i class="fab fa-vuejs"></i></li>
+            <li><i class="fab fa-angular"></i></li>
+            <li><i class="fab fa-node"></i></li>
+            <li><i class="fab fa-wordpress"></i></li>
+            <li><i class="fab fa-aws"></i></li>
+            <li><i class="fab fa-docker"></i></li>
+            <li><i class="fab fa-android"></i></li>
+          </ul>
         </div>
         <div class="overlay-text">
           <h2>Web Development</h2>
@@ -347,8 +335,12 @@
       <div class="overlay-content one">
          <img src="./assets/images/Overlay+Shadow.png" alt="">
       </div>
-      <div class="overlay-content"></div>
-     
+      <div class="overlay-content">
+        <div class="logo-animate">
+          <img src="./assets/images/featured-box/code-face-icon.png" width="250" alt="">
+        </div>
+      </div>
+        
     </div>
     <div class="btn-primary">
       <a href="#" class="cta-button">Explore More</a>
@@ -371,14 +363,21 @@
     <div class="case-studies-container">
       
       <div class="case-studies-content one">
-        <!-- <img src="./assets/images/Free-Elegant-Interior-Laptop-Website-Mockup.png" alt=""> -->
+       
         <div class="service-content">      
           <h2 class="section-title">Explore how we’ve helped businesses <br> transform with innovative technology</h2>
           <p>Success Stories That Speak for Themselves.</p>
         </div>
       </div>
       <div class="case-studies-content two">       
-        <!-- <img src="./assets/images/80a2bb126031567.612542339630e.png" alt=""> -->
+        
+        <div class="service-content">      
+          <h2 class="section-title">Explore how we’ve helped businesses <br> transform with innovative technology</h2>
+          <p>Success Stories That Speak for Themselves.</p>
+        </div>
+      </div>
+      <div class="case-studies-content three">       
+        
         <div class="service-content">      
           <h2 class="section-title">Explore how we’ve helped businesses <br> transform with innovative technology</h2>
           <p>Success Stories That Speak for Themselves.</p>
@@ -395,9 +394,7 @@
      
 <section class="section-contact">
   <div class="container case-staudies contact">
-    <!-- <h6 class="text-center title">
-      <hr class="service-line"></hr>
-      Contact Us</h6> -->
+   <img src="./assets/images/backgrtounds/001@1-3000x3000 1 (2).png" alt="">
     <div class="service-content">      
       <h2 class="section-title">Let’s Link & Build Something Great Together</h2>
       <p>We’re just a message away let’s make it happen.</p>
@@ -473,4 +470,26 @@
     )
     .join("");
 </script>
+<script>
+  const nextButton = document.querySelector('.next-swiper .fa-arrow-right');
+  const prevButton = document.querySelector('.next-swiper .fa-arrow-left');
+  const container = document.querySelector('.case-studies-container');
+
+  // Scroll the container to the right (next)
+  nextButton.addEventListener('click', () => {
+    container.scrollBy({
+      left: container.offsetWidth, // Scroll width equals the container's width
+      behavior: 'smooth', // Smooth scroll
+    });
+  });
+
+  // Scroll the container to the left (previous)
+  prevButton.addEventListener('click', () => {
+    container.scrollBy({
+      left: -container.offsetWidth, // Negative to scroll left
+      behavior: 'smooth', // Smooth scroll
+    });
+  });
+</script>
+
 </html>
