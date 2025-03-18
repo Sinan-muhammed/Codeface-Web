@@ -384,10 +384,10 @@
         </div>
       </div>
     </div>
-     <div class="next-swiper">
-      <i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i>
-      <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
-     </div>
+    <div class="next-swiper">
+      <i class="fa-solid fa-arrow-left" id="scrollLeft" style="color: #ffffff;"></i>
+      <i class="fa-solid fa-arrow-right" id="scrollRight" style="color: #ffffff;"></i>
+    </div>
     
   </div>
 </section>
@@ -470,26 +470,25 @@
     )
     .join("");
 </script>
-<script>
-  const nextButton = document.querySelector('.next-swiper .fa-arrow-right');
-  const prevButton = document.querySelector('.next-swiper .fa-arrow-left');
-  const container = document.querySelector('.case-studies-container');
-
-  // Scroll the container to the right (next)
-  nextButton.addEventListener('click', () => {
-    container.scrollBy({
-      left: container.offsetWidth, // Scroll width equals the container's width
-      behavior: 'smooth', // Smooth scroll
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const scrollLeftButton = document.getElementById('scrollLeft');
+    const scrollRightButton = document.getElementById('scrollRight');
+    const caseStudiesContainer = document.querySelector('.case-studies-container');
+  
+    scrollLeftButton.addEventListener('click', () => {
+      caseStudiesContainer.scrollBy({
+        left: -300, // Adjust the scroll distance
+        behavior: 'smooth'
+      });
+    });
+  
+    scrollRightButton.addEventListener('click', () => {
+      caseStudiesContainer.scrollBy({
+        left: 300, // Adjust the scroll distance
+        behavior: 'smooth'
+      });
     });
   });
-
-  // Scroll the container to the left (previous)
-  prevButton.addEventListener('click', () => {
-    container.scrollBy({
-      left: -container.offsetWidth, // Negative to scroll left
-      behavior: 'smooth', // Smooth scroll
-    });
-  });
-</script>
-
+ </script>
 </html>

@@ -1556,3 +1556,15 @@ section.where-creativity {
   bottom: 28%;
   right: 5%;
 }
+
+.case-studies-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px; /* Adjust the gap between case studies */
+}
+
+.case-studies-content {
+  flex: 0 0 auto;
+  width: 45%; /* Adjust the width of each case study */
+}
