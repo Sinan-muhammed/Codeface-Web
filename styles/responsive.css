@@ -23,7 +23,7 @@
   
     .techno-content .overlay-content {
       width: 50%; /* Half width for tablets and larger screens */
-      height: 600px; /* Fixed height for tablets and larger screens */
+      height: 560px; /* Fixed height for tablets and larger screens */
        /* Adjusted padding for tablets */
       margin-bottom: 0; /* Remove margin between items */
     }
@@ -64,6 +64,7 @@
     .techno-content {
       padding: 0 ; /* Restore padding for desktops */
       margin-bottom: 100px; /* Restore margin for desktops */
+      width: 100%;
     }
   }
 
@@ -133,7 +134,10 @@
 
 /* Responsive Design */
 @media (max-width: 991px) {
-    
+  .service-content p {
+    font-family: 'Lufga Black semi bold';
+    text-align: left;
+}
   
     .counter-number {
       font-size: 60px;
@@ -376,11 +380,18 @@
   padding-top: 15%;
 }
 .creative-grid-content.two{
-  align-items: center;
+  align-items: flex-start;
   gap: 26px;
-  padding-left: 0;
+  padding-left: 40px;
 }
+.overlay-text {
+  width: 60%;
+  text-align: left;
 }
+
+}
+
+
 @media (max-width: 760px) {
   .creative-grid-content.one {
       gap: 70px;
@@ -389,6 +400,11 @@
       padding-top: 30px;
       padding-right: 30px;
       align-items: flex-start;
+  }
+}
+@media (max-width: 700px) {
+  .logo-container {
+     right: 2%;
   }
 }
 @media (max-width: 1400px) {

@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'silver garden Italic';
+    src: url('../assets/fonts/Silver\ Garden\ Italic.woff2') format('woff2'),
+         url('../assets/fonts/Silver\ Garden\ Italic.woff') format('woff'),
+         url('../assets/fonts/Silver\ Garden\ Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+  }
+@font-face {
+    font-family: 'Lufga Black semi bold';
+    src: url('../assets/fonts/Fontspring-DEMO-lufga-regular.otf') format('woff2'),
+         url('../assets/fonts/Fontspring-DEMO-lufga-regular.otf') format('woff'),
+         url('../assets/fonts/Fontspring-DEMO-lufga-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+@font-face {
+    font-family: 'silver garden regular';
+    src: url('../assets/fonts/Silver-Garden.woff2') format('woff2'),
+         url('../assets/fonts/Silver-Garden.woff') format('woff'),
+         url('../assets/fonts/Silver-Garden.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+@font-face {
+    font-family: 'Lufga Thin';
+    src: url('../assets/fonts/Fontspring-DEMO-lufga-thin.woff2') format('woff2'),
+         url('../assets/fonts/Fontspring-DEMO-lufga-thin.woff') format('woff'),
+         url('../assets/fonts/Fontspring-DEMO-lufga-thin.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  h1.hero-title.text-primary span{
+    font-family: 'silver garden Italic';
+    font-weight: 400;
+  }
+  h1.hero-title.text-primary {
+    font-family: 'Lufga Black semi bold';
+    font-weight: 400;
+  }
+  
+p.hero-description.text-secondary{
+    font-family: 'Lufga Black semi bold';
+}
+.section-title{
+    font-family: 'silver garden regular';
+}
+.service-grid .grid-item .grid-content h2{
+    font-family: 'Lufga Black semi bold';
+    letter-spacing: 2px;
+}
+.service-grid .grid-item .grid-content p{
+    font-family: 'Lufga Black semi bold';
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 16px;
+}
+.service-content p{
+    font-family: 'Lufga Black semi bold';
+}
+.creative-para .creative-content{
+    font-family: 'Lufga Thin';
+}
+.creative-grid-content.one h1{
+    font-family: 'Lufga Black semi bold';
+}
+.creative-grid-content.two h1 {
+    font-family: 'Lufga Black semi bold';
+    text-align: left;
+}
+.text {
+    font-family: 'silver garden regular';
+}
+h2.section-title.case-s  {
+    font-family: 'Lufga Black semi bold';
+    font-weight: 500;
+}
+.col-lf h2{
+    font-family: 'Lufga Black semi bold';
+}

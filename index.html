@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="./styles/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <link rel="stylesheet" href="./styles/fonts.css">
       <!-- Tailwind CSS CDN link -->
       <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
@@ -16,6 +16,11 @@
 
  <!-- Start Header Section -->
   <section class="main">
+    <video autoplay muted loop id="bg-video">
+      <source src="./assets/video/AdobeStock_1274573685_4K.mp4" type="video/mp4">
+      <source src="./assets/video/AdobeStock_1274573685_4K.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
     <header class="header">
         <div class="container header">
           <div class="logo">
@@ -53,7 +58,7 @@
             <p class="hero-description text-secondary">
               We provide the best solutions for your business needs. To enable Tailwind  CSS IntelliSense <br> suggestions in VS Code, install the "Tailwind CSS Let's grow together!
             </p>
-            
+           
         </div>
         <div class="btn-primary">
             <a href="#" class="cta-button">Get In Touch</a>
@@ -61,13 +66,9 @@
               <i class="fa-solid fa-arrow-right"></i>
             </div>
         </div>
-         
+        <img src="./assets/images/backgrtounds/Hexagons (2).png" class="hexagone" alt="">
         </div>
-        <video autoplay muted loop id="bg-video">
-          <source src="./assets/video/AdobeStock_1274573685_4K.mp4" type="video/mp4">
-          <source src="./assets/video/AdobeStock_1274573685_4K.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video>
+       
       </section>
       <!-- Start Editors' Logos Section -->
       <section class="editors-logos">
@@ -90,6 +91,7 @@
  
 <!-- Start Counter Section -->
 <section class="counter-section">
+  <img src="./assets/images/backgrtounds/counter.png" class="bg-counter" alt="">
   <div class="container">
     <div class="counters-grid">
       <div class="counter-item one">
@@ -220,21 +222,21 @@
     </div>
     <div class=" feature-box-works">
       
-      <div class="card">
+      <div class="card " data-index="1">
         <img src="./assets/images/featured-box/fashion.png">
-        <div class="card__head">Fashion</div>
+        <div class="card__head">// Fashion</div>
       </div>
-      <div class="card">
+      <div class="card" data-index="2">
         <img src="./assets/images/featured-box/art-featurd-box.jpeg">
-        <div class="card__head">Art</div>
+        <div class="card__head">// Art</div>
       </div>
-      <div class="card">
+      <div class="card" data-index="3">
         <img src="./assets/images/featured-box/money-transfer-featured-box.jpeg">
-        <div class="card__head">Money Transfer</div>
+        <div class="card__head">// Money Transfer</div>
       </div>
-      <div class="card">
+      <div class="card" data-index="4">
         <img src="./assets/images/featured-box/cab-booking-featured-box.jpeg">
-        <div class="card__head">Cab Booking</div>
+        <div class="card__head">// Cab Booking</div>
       </div>
     </div>
     <div class="next-swiper">
@@ -253,7 +255,9 @@
     <div class="creative-para">
       <p class="creative-content">
       At Codeface Technologies, we are more than just a tech company—we are problem solvers, innovators, and creators. With a passion for 
-      cutting-edge technology, we specialize in software development, UX/UI design, and digital transformation to help businesses thrive in the 
+      cutting edge technology, we specialize in <span style=" color: #4ee134ec;
+">software development</span>, <span style="color:  #4800FF;
+">UX  UI design </span>, and <span style="color: yellow;"> digital transformation</span> to help businesses thrive in the 
       digital age.
     </p>
     </div>
@@ -265,27 +269,62 @@
       </div>
       <div class="creative-grid-content two">
         <h1>We use the best technologies</h1>
-        <div class="marquee">
-          <ul class="marquee-content">
-            <li><i class="fab fa-github"></i></li>
-            <li><i class="fab fa-codepen"></i></li>
-            <li><i class="fab fa-free-code-camp"></i></li>
-            <li><i class="fab fa-dev"></i></li>
-            <li><i class="fab fa-react"></i></li>
-            <li><i class="fab fa-vuejs"></i></li>
-            <li><i class="fab fa-angular"></i></li>
-            <li><i class="fab fa-node"></i></li>
-            <li><i class="fab fa-wordpress"></i></li>
-            <li><i class="fab fa-aws"></i></li>
-            <li><i class="fab fa-docker"></i></li>
-            <li><i class="fab fa-android"></i></li>
-          </ul>
+        <div class="logo-container">
+          <div class="logo-scroll">
+            <div class="logo-scroll__wrapper">
+              <div class="logo-item">
+                <i class="fa-brands fa-angular" style="color: #ffffff;"></i>
+              </div>
+              <div class="logo-item">
+                <i class="fa-brands fa-wordpress" style="color: #ffffff;"></i>
+              </div>
+              <div class="logo-item">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="logo-item">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div class="logo-item">
+                <img src="./assets/images/Mongo-db.png" alt="">
+              </div>
+              <div class="logo-item">
+                <i class="fa-brands fa-node-js"></i>
+              </div>
+              <div class="logo-item">
+                <i class="fa-brands fa-php"></i>
+              </div>
+              
+            </div>
+            <div class="logo-scroll__wrapper">
+              <div class="logo-item">
+                <i class="fa-brands fa-angular" style="color: #ffffff;"></i>
+              </div>
+              <div class="logo-item">
+                <i class="fa-brands fa-wordpress" style="color: #ffffff;"></i>
+              </div>
+              <div class="logo-item">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="logo-item">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div class="logo-item">
+                <img src="./assets/images/Mongo-db.png" alt="">
+              </div>
+              <div class="logo-item">
+                <i class="fa-brands fa-node-js"></i>
+              </div>
+              <div class="logo-item">
+                <i class="fa-brands fa-php"></i>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="overlay-text">
           <h2>Web Development</h2>
           <p>We design and develop stunning websites and apps with seamless user experiences and cutting-edge technology.</p>
         </div>
-        <div class="next-swiper">
+        <div class="next-swiper creativity">
           <i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i>
           <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
          </div>
@@ -357,7 +396,7 @@
       <hr class="service-line"></hr>
       Case Studies</h6>
     <div class="service-content">      
-      <h2 class="section-title">Explore how we’ve helped businesses <br> transform with innovative technology</h2>
+      <h2 class="section-title ">Explore how we’ve helped businesses <br> transform with innovative technology</h2>
       <p>Success Stories That Speak for Themselves.</p>
     </div>
     <div class="case-studies-container">
@@ -365,21 +404,21 @@
       <div class="case-studies-content one">
        
         <div class="service-content">      
-          <h2 class="section-title">Explore how we’ve helped businesses <br> transform with innovative technology</h2>
+          <h2 class="section-title case-s">Explore how we’ve helped businesses <br> transform with innovative technology</h2>
           <p>Success Stories That Speak for Themselves.</p>
         </div>
       </div>
       <div class="case-studies-content two">       
         
         <div class="service-content">      
-          <h2 class="section-title">Explore how we’ve helped businesses <br> transform with innovative technology</h2>
+          <h2 class="section-title case-s">Explore how we’ve helped businesses <br> transform with innovative technology</h2>
           <p>Success Stories That Speak for Themselves.</p>
         </div>
       </div>
       <div class="case-studies-content three">       
         
         <div class="service-content">      
-          <h2 class="section-title">Explore how we’ve helped businesses <br> transform with innovative technology</h2>
+          <h2 class="section-title case-s">Explore how we’ve helped businesses <br> transform with innovative technology</h2>
           <p>Success Stories That Speak for Themselves.</p>
         </div>
       </div>
@@ -390,6 +429,7 @@
     </div>
     
   </div>
+  <img src="./assets/images/backgrtounds/smoke-rounde-1.png" class="bg-smoke"  alt="">
 </section>
      
 <section class="section-contact">
@@ -490,5 +530,33 @@
       });
     });
   });
+ </script>
+ 
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".feature-box-works .card");
+
+  // Function to deactivate all cards
+  function deactivateAllCards() {
+    cards.forEach((card) => card.classList.remove("active"));
+  }
+
+  // Add click event listener to each card
+  cards.forEach((card) => {
+    card.addEventListener("click", function () {
+      // If the clicked card is already active, do nothing
+      if (this.classList.contains("active")) return;
+
+      // Deactivate all cards
+      deactivateAllCards();
+
+      // Activate the clicked card
+      this.classList.add("active");
+    });
+  });
+
+  // Activate the first card by default
+  cards[0].classList.add("active");
+});
  </script>
 </html>
