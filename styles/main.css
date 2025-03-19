@@ -648,7 +648,7 @@ font-weight: 400;
 font-size: 48px;
 line-height: 72px;
 letter-spacing: 0%;
-text-align: center;
+/* text-align: center; */
 
 }
 
@@ -658,7 +658,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 25px;
 letter-spacing: 0%;
-text-align: center;
+/* text-align: center; */
 
   font-size: 16px;
   color: #ffffff;
@@ -1359,14 +1359,17 @@ section.where-creativity {
 .case-studies-content.one{
  background-image: url(../assets/images/Free-Elegant-Interior-Laptop-Website-Mockup.png);
  background-size: cover;
+ background-position: center;
 }
 .case-studies-content.two{
   background-image: url(../assets/images/80a2bb126031567.612542339630e.png);
   background-size: cover;
+  background-position: center;
  }
 .case-studies-content.three{
   background-image: url(../assets/images/featured-box/art-featurd-box.jpeg);
   background-size: cover;
+  background-position: center;
  }
 .case-studies-content .section-title{
   font-size: 25px;
@@ -1631,6 +1634,7 @@ section.where-creativity {
 .creative-grid-content.one img{
   position: absolute;
   left: -19%;
+  z-index: 2;
 }
 .hero-content{
   position: relative;

@@ -64,6 +64,7 @@ p.hero-description.text-secondary{
 }
 .creative-grid-content.one h1{
     font-family: 'Lufga Black semi bold';
+    z-index: 4;
 }
 .creative-grid-content.two h1 {
     font-family: 'Lufga Black semi bold';

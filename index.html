@@ -222,7 +222,7 @@
     </div>
     <div class=" feature-box-works">
       
-      <div class="card " data-index="1">
+      <div class="card active " data-index="1">
         <img src="./assets/images/featured-box/fashion.png">
         <div class="card__head">// Fashion</div>
       </div>
@@ -240,8 +240,8 @@
       </div>
     </div>
     <div class="next-swiper">
-      <i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i>
-      <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+      <i id="scrollLeft" class="fa-solid fa-arrow-left" style="color: #ffffff;"></i>
+  <i id="scrollRight" class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
      </div>
   </div>
 </section>
@@ -559,4 +559,44 @@
   cards[0].classList.add("active");
 });
  </script>
+ 
+ <script>
+  // Function to initialize scrolling
+const initScrolling = () => {
+  const container = document.querySelector('.feature-box-works');
+  const scrollLeft = document.getElementById('scrollLeft');
+  const scrollRight = document.getElementById('scrollRight');
+
+  if (container && scrollLeft && scrollRight) {
+    // Scroll left functionality
+    scrollLeft.addEventListener('click', () => {
+      container.scrollBy({
+        left: -300, // Adjust this value to match the card width + gap
+        behavior: 'smooth'
+      });
+    });
+
+    // Scroll right functionality
+    scrollRight.addEventListener('click', () => {
+      container.scrollBy({
+        left: 300, // Adjust this value to match the card width + gap
+        behavior: 'smooth'
+      });
+    });
+  }
+};
+
+// Check screen width and initialize scrolling only for screens up to 991px
+if (window.innerWidth <= 991) {
+  initScrolling();
+}
+
+// Optional: Reinitialize on window resize
+window.addEventListener('resize', () => {
+  if (window.innerWidth <= 991) {
+    initScrolling();
+  }
+});
+ </script>
+ 
 </html>
