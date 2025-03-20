@@ -133,9 +133,9 @@
       text-align: left;
   }
   .container.case-staudies{
-    align-items: flex-start;
+    align-items: normal;
   }
-  
+
   }
 
 /* Responsive Design */
